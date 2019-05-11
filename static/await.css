@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Fira Sans";
+    src: local("Fira Sans Regular"),
+         local("FiraSans-Regular"),
+         url("fonts/FiraSans-Regular.subset.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: local("Fira Sans Bold"),
+         local("FiraSans-Bold"),
+         url("fonts/FiraSans-Bold.subset.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Fira Mono";
+    src: local("Fira Mono Regular"),
+         local("FiraMono-Regular"),
+         url("fonts/FiraMono-Regular.subset.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Fira Mono";
+    src: local("Fira Mono Bold"),
+         local("FiraMono-Bold"),
+         url("fonts/FiraMono-Bold.subset.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+}
+
+body {
+    font-family: Fira Sans, Helvetica, Arial, sans-serif;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+h1 {
+    margin: 1em 0;
+    line-height: 1.5em;
+}
+
+code {
+    background: #eee;
+    display: inline-block;
+    padding: 0 0.5em;
+    border-radius: 0.1em;
+    font-family: Fira Mono;
+}
+
+p {
+    max-width: 35em;
+    margin: auto;
+}
+
+a {
+    color: #1e1ee1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.counters {
+    margin: 2em 0;
+}
+
+.counter {
+    margin: 1em 0;
+}
+
+.counter-date {
+    font-size: 1.6em;
+    margin-top: 0.3em;
+}
+
+.footer {
+    opacity: 0.5;
+    margin-top: 1rem;
+    font-size: 0.8em;
+    line-height: 1.3em;
+}

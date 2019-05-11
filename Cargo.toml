@@ -1,0 +1,14 @@
+[package]
+name = "areweawaityet"
+version = "0.1.0"
+authors = ["Pietro Albini <pietro@pietroalbini.org>"]
+edition = "2018"
+
+[dependencies]
+rss = "1.7.0"
+chrono = { version = "0.4.6", features = ["serde"] }
+reqwest = "0.9.16"
+atom_syndication = "0.6.0"
+failure = "0.1.5"
+tera = "0.11.20"
+serde = { version = "1.0.91", features = ["derive"] }

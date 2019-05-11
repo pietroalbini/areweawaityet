@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Are we await yet?</title>
+        <link rel="stylesheet" href="await.css">
+    </head>
+    <body>
+        <h1>Are we <code id="awaityet">await yet?</code></h1>
+
+        <div class="counters">
+            <div class="counter">
+                {% if last_thread %}
+                    The <a href="{{ last_thread.url }}">last thread</a> was posted
+                    <div class="counter-date relative" data-date="{{ last_thread.created_at }}">on {{ last_thread.created_at }}</div>
+                {% else %}
+                    The last thread was posted <div class="counter-date">a long time ago</div>
+                {% endif %}
+            </div>
+            <div class="counter">
+                {% if last_comment %}
+                    The <a href="{{ last_comment.url }}">last comment</a> was posted
+                    <div class="counter-date relative" data-date="{{ last_comment.created_at }}">on {{ last_comment.created_at }}</div>
+                {% else %}
+                    The last comment was posted <div class="counter-date">a long time ago</div>
+                {% endif %}
+            </div>
+        </div>
+
+        <p>
+            This website tracks the bikeshedding around
+            <a href="https://www.rust-lang.org">Rust</a>'s
+            <a href="https://areweasyncyet.rs">async/await</a> feature, and
+            especially the syntax of the <code>await</code> keyword.
+        </p>
+
+        <p class="footer">
+            <a href="https://github.com/pietroalbini/areweawaityet">Source code</a>,
+            by <a href="https://www.pietroalbini.org">Pietro Albini</a>.<br>
+            Last page update
+            <span class="relative" data-date="{{ updated_at }}">on {{ updated_at }}</span>.
+        </p>
+
+        <script type="text/javascript" src="moment.min.js"></script>
+        <script type="text/javascript" src="await.js"></script>
+    </body>
+</html>
