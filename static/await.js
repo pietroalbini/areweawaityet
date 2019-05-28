@@ -1,16 +1,14 @@
 const AWAIT_SYNTAXES = [
-    "await yet?",
-    "(await yet)?",
-    "await!(yet)?",
-    "await? yet",
-    "await { yet }?",
-    "yet.await?",
-    "yet.await()?",
-    "yet.await!()?",
-    "yet await?",
-    "yet!?",
-    "yet#?",
-    "yet@?",
+    "await anymore",
+    "await!(anymore)",
+    "await anymore",
+    "await { anymore }",
+    "anymore.await()",
+    "anymore.await!()",
+    "anymore await",
+    "anymore!",
+    "anymore#",
+    "anymore@",
 ];
 document.getElementById("awaityet").innerHTML = AWAIT_SYNTAXES[Math.floor(Math.random() * AWAIT_SYNTAXES.length)];
 

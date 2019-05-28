@@ -43,6 +43,10 @@ body {
 
 h1 {
     margin: 1em 0;
+    line-height: 1.7em;
+}
+
+h1 code {
     line-height: 1.5em;
 }
 
@@ -56,7 +60,7 @@ code {
 
 p {
     max-width: 35em;
-    margin: auto;
+    margin: 0.5em auto;
 }
 
 a {
