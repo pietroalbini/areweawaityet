@@ -1,3 +1,3 @@
-/target
+/archive/target
 **/*.rs.bk
-/static/index.html
+/archive/static/index.html
