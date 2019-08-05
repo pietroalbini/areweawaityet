@@ -1,0 +1,20 @@
+[build]
+publish = "www"
+command = "./delinkify.sh www"
+
+# Permanent redirect from the netlify domain to the canonical domain
+[[redirects]]
+from = "https://org-pietroalbini-await.netlify.com/*"
+to = "https://await.pietroalbini.org/:splat"
+status = 301
+force = true
+
+# Security headers
+[[headers]]
+for = "/*"
+[headers.values]
+X-Frame-Options = "DENY"
+X-Xss-Protection = "1; mode=block"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "no-referrer"
+Content-Security-Policy = "default-src 'none'; img-src 'self'; style-src 'self'; font-src 'self'"
